@@ -1,4 +1,4 @@
-# TIN Validator
+# International Taxpayer Identification Number Validator
 
 based of: https://ec.europa.eu/taxation_customs/tin/#/check-tin
 
