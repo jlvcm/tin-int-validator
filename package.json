@@ -4,7 +4,14 @@
   "description": "based of: https://ec.europa.eu/taxation_customs/tin/#/check-tin",
   "main": "index.js",
   "scripts": {
+    "prepare" : "npm run build",
     "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags",
     "test": "LOG_LEVEL=Debug jest --testTimeout 50000 --runInBand"
   },
   "files": [
