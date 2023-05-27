@@ -1,8 +1,9 @@
 {
   "name": "tin-int-validator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "based of: https://ec.europa.eu/taxation_customs/tin/#/check-tin",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "prepare" : "npm run build",
     "build": "tsc",
