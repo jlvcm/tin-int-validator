@@ -265,7 +265,7 @@ describe('validateTINByCountry', () => {
       expect(validateTINByCountry('AA123456E', Countries.UnitedKingdom)).toBe(false);
     });
   });
-  describe('United Kingdom', () => {
+  describe('United States', () => {
     it('should return true for valid TIN', () => {
       expect(validateTINByCountry('123456789', Countries.UnitedStates)).toBe(true);
     });
